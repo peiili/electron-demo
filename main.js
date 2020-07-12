@@ -1,27 +1,27 @@
-const {app,BrowserWindow}  = require('electron')
+const { app, BrowserWindow } = require("electron");
 // const event  = require('./event')
-function createWindow(){
+function createWindow() {
   let win = new BrowserWindow({
-    width:800,
-    height:600,
-    alwaysOnTop:true,
-    webPreferences:{
+    width: 800,
+    height: 600,
+    alwaysOnTop: true,
+    webPreferences: {
       // 浏览器解析require（）
-      nodeIntegration:true
-    }
-  })
-  win.loadFile('./index.html')
+      nodeIntegration: true,
+    },
+  });
+  win.loadFile("./index.html");
   // win.loadURL('https://www.google.com')
-  win.webContents.openDevTools()
+  win.webContents.openDevTools();
 }
-app.whenReady().then(createWindow)
-app.on('window-all-closed',()=>{
-  if(process.platform!=='darwin'){
-    app.quit()
+app.whenReady().then(createWindow);
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") {
+    app.quit();
   }
-})
-app.on('active',()=>{
-  if(BrowserWindow.getAllWindows().length===0){
-    createWindow()
+});
+app.on("active", () => {
+  if (BrowserWindow.getAllWindows().length === 0) {
+    createWindow();
   }
-})
+});

@@ -1,0 +1,9 @@
+{
+  "extends": "eslint-config-airbnb",
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "quotes": [1, "single"]
+  }
+}
