@@ -18,11 +18,17 @@
   <button onclick="onClick_Message()">打开消息对话框</button>
   <input id="read" type="checkbox" />以阅读
   <label id='messagelabel'></label>
-
-
-
-  <script src="./event.js"></script>
-  <script src="./save.js"></script>
+  <hr />
+  <h2>打开新窗口</h2>
+  <button onclick="onClick_OpenWidow()">打开新的窗口</button>
+  <button onclick="onClick_Windowfocus()">新窗口获取焦点</button>
+  <button onclick="onClick_WindowBlur()">新窗口失去焦点</button>
+  <button onclick="onClick_WindowCloes()">关闭新窗口</button>
+  <br>
+  <button onclick="onClick_WindowPrint()">打印当前页</button>
+  <script src="./src/event.js"></script>
+  <script src="./src/save.js"></script>
+  <script src="./src/h5.js"></script>
 </body>
 
 </html>
