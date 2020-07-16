@@ -6,4 +6,3 @@
 4. 消息对话框 dialog.showMessageBox(options)
 5. 创建新窗口 window.open(url[,title][,attributes])
 6. 子窗口交互 win.postMessage(message,'\*')
-7. 使用模版创建原生菜单 Menu subMenu
