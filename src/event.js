@@ -1,6 +1,6 @@
 let remote = require("electron").remote;
 let dialog = remote.dialog;
-console.log(process.platform);
+
 function onClick_OpenFile() {
   const label = document.getElementById("label");
   var options = {};
